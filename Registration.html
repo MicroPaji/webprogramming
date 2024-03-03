@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style> ul {
+        list-style-type: none;
+      }
+      ul li{display: inline-block;
+        font-size: 25px;
+        margin-right: 20px;
+}
+ul li a{text-decoration: none;
+    padding: 32px 44px;
+}
+.mid{
+    display: block;
+    width: 54%;
+    margin: auto;
+    }  
+    .midmain{display: block;
+    width: 10%;
+    margin: 100px auto;
+font-size:135%;}  
+h1{background-color: aqua;
+display: block;
+width: 12%;
+margin: auto;}
+</style>
+<head>
+    <title>Registration Page</title>
+</head>
+<body>
+    <header>
+        <h1>Registration</h1>
+    </header>
+    <div class="mid">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="About.html">About</a></li>
+        </ul>
+    </div>
+    <main>
+        <form action="registration_process.php" method="POST" class="midmain">
+            <label for="firstname">First name:</label><br>
+            <input type="text" id="firstname" name="firstname"><br>
+            <label for="lastname">Last name:</label><br>
+            <input type="text" id="lastname" name="lastname"><br>
+	    <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>	
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br>
+            <label for="confirm_password">Confirm Password:</label><br>
+            <input type="password" id="confirm_password" name="confirm_password"><br>
+            <input type="submit" value="Register">
+        </form>
+    </main>
+</body>
+</html>
