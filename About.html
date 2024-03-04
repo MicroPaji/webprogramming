@@ -3,19 +3,69 @@
     <style> ul {
         list-style-type: none;
       }
-      ul li{display: inline-block;
-        font-size: 25px;
-        margin-right: 20px;
+      body{margin: 0px;
+padding: 0px;
+background:url('gamebg.png') ;
+background-color: black;}
+ul {
+  list-style-type: none;
 }
-ul li a{text-decoration: none;
+ul li{display: inline-block;
+    font-size: 25px ;
+    margin-right: 20px;
+ 
+}
+.navbar {
+  list-style-type: none;
+  color: white;
+  background-color: red;
+  padding: 5px 24px;
+}
+.navbar li{display: inline-block;
+    font-size: 25px ;
+    color: white;
+    margin-right: 20px;}
+.navbar li a{text-decoration: none;
     padding: 32px 44px;
+    color: white;}
+.navbar li a:hover, .navbar li a.active{
+    text-decoration: underline;
 }
 .mid{
     display: block;
     width: 54%;
     margin: auto;
     }  
-    h1{background-color: aqua;
+    .left{  
+    display: inline-block;
+    position: absolute;
+    left: 15px;
+    top: -12px;
+    color: white;
+}    
+.left img{width: 130px;}
+.left div{text-align: center;font-size: 19px;}
+.right{
+    display: inline-block;
+    position: absolute;
+    right: 4px;
+    top: -15px;
+
+} 
+.btn{
+    margin: 9px 9px;
+    background-color: black;
+    color: white;
+    padding: 4px 15px ;
+    font-size: 18px;
+    cursor: pointer;
+    border: 2px solid red;
+    border-radius: 20px;
+    font-style: italic;
+} 
+.btn:hover{text-decoration: underline;}
+    h1{background-color: black;
+        color: white;
 display: block;
 width: 6%;
 margin: auto;}
@@ -27,17 +77,27 @@ margin: auto;}
     <header>
         <h1>About</h1>
     </header>
-    <div class="mid">
-        <ul>
-            <li><a href="Index.html">Home</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="registration.html">Register</a></li>
-            <li><a href="#">About</a></li>
-        </ul>
-
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="About.html">Shop</a></li>
+                <li><a href="#" class="active">About Us</a></li>
+            </ul>
+         </div>
+        <div class="right">
+            <ul>
+                <li><a href="login.html"><button class="btn">Login</button></a></li>
+                <li><a href="registration.html"><button class="btn">Register</button></a></li>
+            </ul>
+        </div>
+        <div class="left">
+            <img src="pad.png" alt="">
+            <div>Gamers Stop</div>
+        </div>
     </div>
     <main>
-        <p style="font-size: 20px; margin: 45px auto; display: block; width: 38%; ">This website is made by Abhineet Singh(2022BCH1109) as a GE project</p>
+        <p style="color: white; font-size: 20px; margin: 45px auto; display: block; width: 38%; ">This website is made by Abhineet Singh(2022BCH1109) as a GE project</p>
     </main>
 </body>
 </html>

@@ -28,7 +28,7 @@ ul li{display: inline-block;
 .navbar li a{text-decoration: none;
     padding: 32px 44px;
     color: white;}
-    .navbar li a:hover, .navbar li a.active{
+.navbar li a:hover, .navbar li a.active{
     text-decoration: underline;
 }
     .mid{
@@ -36,25 +36,29 @@ ul li{display: inline-block;
     width: 54%;
     margin: 20px auto;
     }
-
-    .midmain{display: block;
-    width: 35%;
+    .search{display: block;
+    width: 20%;
     margin: 100px auto;
 font-size: 135%;
-color: white;}  
-.main{
-    border: 2px solid white;
-    padding: 20px ;
-    width: 33%;
-    margin: 50px 460px;
-    border-radius: 28px;
-}
+color: white;}
+.search button {
+    display: block;
+    margin: 10px auto;
+    margin-right: 110px;
+    background-color: #0074D9;
+    color: #f2f2f2;
+    padding: 5px 10px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;}
+      
 .left{  
     display: inline-block;
     position: absolute;
     left: 15px;
     top: -12px;
     color: white;
+    
 }    
 .left img{width: 130px;}
 .left div{text-align: center;font-size: 19px;}
@@ -76,20 +80,7 @@ color: white;}
     border-radius: 20px;
     font-style: italic;
 } 
-.btnn{
-    margin: 9px 9px;
-    background-color: black;
-    color: white;
-    padding: 4px 15px ;
-    font-size: 18px;
-    cursor: pointer;
-    border: 2px solid red;
-    border-radius: 20px;
-    font-style: italic;
-} 
-.btnn:hover, .btn{
-    text-decoration: underline;
-}
+.btn:hover{text-decoration: underline;}
     h1{background-color: black;
         color: white;
 display: block;
@@ -106,28 +97,27 @@ margin: auto;}
     <div class="mid">
         <ul class="navbar">
             <li><a href="Index.html">Home</a></li>
-            <li><a href="search.html">Search</a></li>
+            <li><a href="#" class="active">Search</a></li>
             <li><a href="About.html">Shop</a></li>
             <li><a href="About.html">About Us</a></li>
         </ul>
      </div>
     <div class="right">
-        <ul class="bar">
-            <li><a href="login.html" ><button class="btn">Login</button></a></li>
-            <li><a href="registration.html"><button class="btnn     ">Register</button></a></li>
+        <ul>
+            <li><a href="login.html"><button class="btn">Login</button></a></li>
+            <li><a href="registration.html"><button class="btn">Register</button></a></li>
         </ul>
     </div>
     <div class="left">
         <img src="pad.png" alt="">
         <div>Gamers Stop</div>
     </div>
-    <div class="main">
-        <form action="login_process.php" method="POST" class="midmain">
-            <label for="username">Username:</label><br>
-            <input type="text" id="username" name="username"><br>
-            <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password"><br>
-            <input type="submit" value="Login">
+    <div class="search">
+        <form action="#">
+            <input style="height: 40px; width: 270px;"type="text" placeholder="Search Games" name="search">
+            <button>
+                <i class="fa fa-search" style="font-size: 18px;">Search</i>
+            </button>
         </form>
     </div>
 </body>

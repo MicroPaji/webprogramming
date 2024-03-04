@@ -1,63 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<style> ul {
+<style>
+body{margin: 0px;
+padding: 0px;
+background:url('gamebg.png') ;
+background-color: black;}
+.main{
+    border: 2px solid white;
+    padding: 20px ;
+    width: 33%;
+    margin: 50px 460px;
+    border-radius: 28px;
+}
+.main { list-style-type: none;
+    
+}
+.main li{
+    display: block;
+    width: 105%;
+    margin: 70px 80px;
+    font-size: 35px ;
+}
+.main li a{text-decoration: none;
+    padding: 12px 44px;
+    color: white;
+}
+ul {
   list-style-type: none;
 }
 ul li{display: inline-block;
     font-size: 25px ;
     margin-right: 20px;
-
+ 
 }
-ul li a{text-decoration: none;
+.navbar {
+  list-style-type: none;
+  color: white;
+  background-color: red;
+  padding: 5px 24px;
+}
+.navbar li{display: inline-block;
+    font-size: 25px ;
+    color: white;
+    margin-right: 20px;}
+.navbar li a{text-decoration: none;
     padding: 32px 44px;
+    color: white;
+}
+.navbar li a:hover, .navbar li a.active{
+    text-decoration: underline;
 }
 .mid{
     display: block;
     width: 54%;
-    margin: 20px auto;
+    margin: 0px auto;
     }
 .left{  
     display: inline-block;
     position: absolute;
-    left: 34px;
-    top: 0px;
+    left: 15px;
+    top: -12px;
+    color: white;
 }    
+.left img{width: 130px;}
+.left div{text-align: center;font-size: 19px;}
 .right{
     display: inline-block;
     position: absolute;
-    right: 34px;
-    top: 0px;
+    right: 4px;
+    top: -15px;
 
-}  
-    h1{background-color: aqua;
+} 
+.btn{
+    margin: 9px 9px;
+    background-color: black;
+    color: white;
+    padding: 4px 15px ;
+    font-size: 18px;
+    cursor: pointer;
+    border: 2px solid red;
+    border-radius: 20px;
+    font-style: italic;
+} 
+.btn:hover{text-decoration: underline;}
+    h1{background-color: black;
 display: block;
-width: 24%;
-margin: auto;}  </style>
+width: 17%;
+margin: auto;
+color: white;}  </style>
 <head>
           <title>Home Page</title>
 </head>
 <body>
     <header>
-               <h1>Welcome to My Website</h1>
+            
     </header>
+    
     <div class="mid">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="About.html">About</a></li>
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="search.html">Search</a></li>
+            <li><a href="About.html">Shop</a></li>
+            <li><a href="About.html">About Us</a></li>
         </ul>
      </div>
     <div class="right">
         <ul>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="registration.html">Register</a></li>
+            <li><a href="login.html"><button class="btn">Login</button></a></li>
+            <li><a href="registration.html"><button class="btn">Register</button></a></li>
         </ul>
     </div>
     <div class="left">
-
+        <img src="pad.png" alt="">
+        <div>Gamers Stop</div>
     </div>
-
-    <main>
-        <p>WELCOME</p>
-    </main>
+    
+    <div class="main">
+        <li><a href="search.html">ORDER NOW</a></li>
+    </div>
 </body>
 </html>
